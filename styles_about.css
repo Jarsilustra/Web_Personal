@@ -62,4 +62,9 @@ nav ul li a{
     padding: 20px;
 }
 
+.navbar label{
+    cursor: pointer;
+    display: none;
+}
+
 /*  fin --- nav --- htmal */
