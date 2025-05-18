@@ -25,13 +25,13 @@ body{
     align-items: center;
     width: 100%;
     margin: auto;
-    padding: 0, 1rem;
+    padding: 0;
     position: fixed;
     z-index: 1;
 }
 
 .logo{
-    margin: 0.5rem;
+    margin: 0;
 }
 
 .navbar ul{
@@ -66,6 +66,25 @@ nav ul li a{
 .navbar label{
     cursor: pointer;
     display: none;
+}
+
+h1{
+    font-family: "Urbanist", sans-serif;
+}
+
+h2{
+    font-family: "Urbanist", sans-serif;
+    padding: 5px;
+}
+
+h3{
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    padding: 10px 0;
 }
 
 /*  fin --- .nav --- htmal */
@@ -135,6 +154,58 @@ nav ul li a{
 /*  fin --- .hero --- htmal */
 
 .about{
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px 10px;
+    padding: 30px;
+}
+
+.contenedor2{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
+.about-text{
+    flex: 1;
+    padding: 0 0 0 150px;
+    min-width: 300px;
+}
+
+.about-imagen{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.contenedor2 img{
+    width: 300px;
+    height: 375px;
+    padding: 20px;
+}
+
+.btn{
+    padding: 0 100px 0 0;
+}
+
+.btn a{
+    color: #000;
+    text-decoration: none;
+    background-color: #db9600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+.btn a:hover{
+    background-color: #fff;
+}
+
+/*  fin --- .about --- htmal */
+
