@@ -1,1 +1,66 @@
-#7c7b79
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(Imagenes/fondo_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navegador{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0, 1rem;
+    position: fixed;
+}
+
+.logo{
+    margin: 0.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li{
+    margin: 5px;
+    padding: 1px;
+}
+
+nav ul li a{
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1.5rem 0 0;
+    padding: 0 1rem 0 0;
+}
+
+.navbar a:hover{
+    background-color: #db9600;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*  fin --- nav --- htmal */
+
