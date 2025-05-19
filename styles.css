@@ -17,6 +17,8 @@ body{
     background-attachment: fixed;
 }
 
+/*  inicio --- .nav --- html */
+
 .navegador{
     background-color: #000;
     display: flex;
@@ -89,6 +91,8 @@ p{
 
 /*  fin --- .nav --- html */
 
+/*  inicio --- .hero --- html */
+
 .hero{
     position: relative;
     width: 100%;
@@ -151,15 +155,18 @@ p{
 .btn-hero a:hover{
     background-color: #fff;
     color: #000;
+    transform: scale(1.2);
 }
 
 /*  fin --- .hero --- html */
+
+/*  inicio --- .about --- html */
 
 .about{
     background-color: #000;
     color: #fff;
     border-radius: 8px;
-    margin: 5px 10px;
+    margin: 5px 30px;
     padding: 30px;
 }
 
@@ -207,9 +214,12 @@ p{
 
 .btn a:hover{
     background-color: #fff;
+    transform: scale(1.2);
 }
 
 /*  fin --- .about --- html */
+
+/*  inicio --- .portafolio --- html */
 
 .portafolio{
     color: #000;
@@ -302,9 +312,12 @@ p{
 .btn-porta a:hover{
     background-color: #db9600;
     color: #000;
+    transform: scale(1.2);
 }
 
 /*  fin --- .portafolio --- html */
+
+/*  inicio --- .services --- html */
 
 .services{
     background-color: #fff;
@@ -357,6 +370,77 @@ p{
 .btn-service a:hover{
     background-color: #db9600;
     color: #000;
+    transform: scale(1.2);
 }
 
 /*  fin --- .services --- html */
+
+/*  inicio --- .contact --- html */
+
+.contact{
+    color: #000;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.contenedor5{
+    text-align: left;
+    margin: 40px;
+}
+
+.btn-contact{
+    display: grid;
+    justify-content: center;
+    padding: 40px 80px 0 0;
+}
+
+.btn-contact a{
+    font-family: "Nunito", sans-serif;
+    display: inline-block;
+    background-color: #000;
+    color: #db9600;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-contact a:hover{
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.2);
+}
+
+/*  fin --- .contact --- html */
+
+/*  inicio --- .footer --- html */
+
+.contenedor6{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: small;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/*  fin --- .footer --- html */
