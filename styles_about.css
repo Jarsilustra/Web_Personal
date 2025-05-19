@@ -18,6 +18,8 @@ body{
     background-attachment: fixed;
 }
 
+/*  inicio --- .nav --- html */
+
 .navegador{
     background-color: #000;
     display: flex;
@@ -74,7 +76,7 @@ h1{
 
 h2{
     font-family: "Urbanist", sans-serif;
-    padding: 5px;
+    padding: 20px;
 }
 
 h3{
@@ -87,4 +89,131 @@ p{
     padding: 10px 0;
 }
 
-/*  fin --- .nav --- htmal */
+/*  fin --- .nav --- html */
+
+/*  inicio --- .about- información  --- html */
+
+.about-info{
+    text-align: center;
+    padding: 110px 30px 30px 20px;
+}
+
+.info{
+    background-color: #000;
+    color: #fff;
+    width: 11%;
+    border-radius: 10px;
+    align-items: center;
+    margin: 20px 5px;
+    padding: 20px 20px;
+}
+
+.contenedor img{
+    width: 300px;
+    height: 375px;
+}
+
+.contenedor{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info1{
+    display: flex;
+    flex: 1;
+    column-count: 2;
+    column-gap: 30px;
+    padding: 0 50px 0 50px;
+    min-width: 300px;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.info1-img img{
+    width: 300px;
+    height: auto; 
+    border-radius: 10px;
+    transition: all 0.4s ease, box-shadow 0.3s ease; 
+    transform-style: preserve-3d;
+}
+
+/* -- efecto 3D -- */
+
+.info1-img {
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.info1-img:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.info1-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+    transform: skewX(-25deg);
+}
+
+.info1-img:hover::after {
+    left: 125%;
+    transition: left 0.6s ease;
+}
+
+/* -- Fin efecto --*/
+
+.info2{
+    display: flex;
+    flex: 1;
+    column-count: 2;
+    column-gap: 30px;
+    padding: 0 50px 0 50px;
+    min-width: 300px;
+}
+
+/*  fin --- .about - información --- html */
+
+/*  inicio --- .footer --- html */
+
+.contenedor6{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: small;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/*  fin --- .footer --- html */
