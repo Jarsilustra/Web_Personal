@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 
 body{
@@ -50,6 +49,7 @@ body{
 nav ul li a{
     font-family: "Nunito", sans-serif;
     color: #fff;
+    list-style: none;
     text-decoration: none;
     font-weight: bold;
     margin: 0 1.5rem 0 0;
@@ -87,7 +87,7 @@ p{
     padding: 10px 0;
 }
 
-/*  fin --- .nav --- htmal */
+/*  fin --- .nav --- html */
 
 .hero{
     position: relative;
@@ -136,11 +136,13 @@ p{
 
 .btn-hero a{
     font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     display: inline-block;
     background-color: #db9600;
     color: #000;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 30px 40px;
     margin: 0 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -151,7 +153,7 @@ p{
     color: #000;
 }
 
-/*  fin --- .hero --- htmal */
+/*  fin --- .hero --- html */
 
 .about{
     background-color: #000;
@@ -207,7 +209,7 @@ p{
     background-color: #fff;
 }
 
-/*  fin --- .about --- htmal */
+/*  fin --- .about --- html */
 
 .portafolio{
     color: #000;
@@ -283,7 +285,7 @@ p{
 /* -- Fin efecto --*/
 
 .btn-porta{
-    padding: 30px;
+    padding: 30px 0 0 0;
 }
 
 .btn-porta a{
@@ -302,5 +304,59 @@ p{
     color: #000;
 }
 
-/*  fin --- .portafolio --- htmal */
+/*  fin --- .portafolio --- html */
 
+.services{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.contenedor4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-text{
+    flex: 1;
+    padding: 0 0 0 100px;
+    min-width: 300px;
+}
+
+.lista-service{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.lista2{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+}
+
+.btn-service{
+    padding: 0 100px 0 0;
+}
+
+.btn-service a{
+    font-family: "Nunito", sans-serif;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-service a:hover{
+    background-color: #db9600;
+    color: #000;
+}
+
+/*  fin --- .services --- html */
