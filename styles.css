@@ -97,7 +97,7 @@ p{
 }
 
 .contenedor1{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -208,4 +208,99 @@ p{
 }
 
 /*  fin --- .about --- htmal */
+
+.portafolio{
+    color: #000;
+    border-radius: 8px;
+    margin: 5px 10px;
+    padding: 30px;
+}
+
+.contenedor3{
+    text-align: center;
+}
+
+.portafolio-text{
+   background-color: #000;
+   justify-content: center;
+   color: #fff;
+   margin: 0 20px 50px 20px;
+   padding: 20px;
+   border-radius: 20px;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.img-jars img{
+    width: 300px;
+    height: auto; 
+    border-radius: 10px;  
+    transition: all 0.4s ease, box-shadow 0.3s ease; 
+    transform-style: preserve-3d;
+}
+
+.img-jars figcaption{
+    margin-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* -- efecto 3D -- */
+
+.img-jars {
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-jars:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.img-jars::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+    transform: skewX(-25deg);
+}
+
+.img-jars:hover::after {
+    left: 125%;
+    transition: left 0.6s ease;
+}
+
+/* -- Fin efecto --*/
+
+.btn-porta{
+    padding: 30px;
+}
+
+.btn-porta a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+.btn-porta a:hover{
+    background-color: #db9600;
+    color: #000;
+}
+
+/*  fin --- .portafolio --- htmal */
 
