@@ -10,14 +10,6 @@
     list-style: none;
 }
 
-body{
-    background-image: url(Imagenes/fondo_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /*  inicio --- .nav --- html */
 
 .navegador{
@@ -34,6 +26,7 @@ body{
 
 .logo{
     margin: 0;
+    padding: 0 0 0 30px;
 }
 
 .navbar ul{
@@ -94,17 +87,22 @@ p{
 /*  inicio --- .about- información  --- html */
 
 .about-info{
+    background-image: url(Imagenes/fondos/fondo_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-    padding: 110px 30px 30px 20px;
+    margin: 0;
+    padding: 150px 50px 80px 50px;
 }
 
 .info{
     background-color: #000;
     color: #fff;
-    width: 11%;
+    width: 20%;
     border-radius: 10px;
     align-items: center;
-    margin: 20px 5px;
+    margin: 20px 600px;
     padding: 20px 20px;
 }
 
@@ -117,16 +115,19 @@ p{
     background-color: #000;
     color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    margin: 0 60px;
+    padding: 30px;
 }
 
 .info1{
     display: flex;
     flex: 1;
+    text-align: left;
     column-count: 2;
     column-gap: 30px;
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
     min-width: 300px;
+    gap: 50px;
 }
 
 .galeria{
@@ -179,10 +180,12 @@ p{
 .info2{
     display: flex;
     flex: 1;
+    text-align: left;
     column-count: 2;
     column-gap: 30px;
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
     min-width: 300px;
+    gap: 50px;
 }
 
 /*  fin --- .about - información --- html */
