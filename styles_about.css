@@ -152,6 +152,7 @@ p{
     perspective: 1000px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .info1-img:hover img {

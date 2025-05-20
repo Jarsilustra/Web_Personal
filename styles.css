@@ -263,12 +263,71 @@ mark{
     transform-style: preserve-3d;
 }
 
-.img-jars figcaption{
-    margin-top: 10px;
-    font-family: "Nunito", sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+/* -- flipcard -- */
+
+.flip-card {
+  width: 300px;
+  height: 375px;
+  cursor: pointer;
+  position: relative;
 }
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.img-jars{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+}
+
+.flip-card.flipped .img-jars {
+  z-index: 0;
+}
+
+.flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-back {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.flip-card.flipped .flip-back {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* -- Fin flipcard --*/
 
 /* -- efecto 3D -- */
 
