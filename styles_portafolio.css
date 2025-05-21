@@ -10,8 +10,10 @@
     list-style: none;
 }
 
+/*  inicio --- .nav --- html */
+
 body{
-    background-image: url(Imagenes/fondo_1.jpg);
+    background-image: url(Imagenes/fondos/fondo_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,4 +90,127 @@ p{
     padding: 10px 0;
 }
 
-/*  fin --- .nav --- htmal */
+/*  fin --- .nav --- html */
+
+/* inicio --- .porfolio --- html */
+
+.porfolio{
+    margin: auto;
+    padding: 140px 0 70px 0;
+}
+
+.titulo{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info5{
+    background-color: #000;
+    color: #fff;
+    width: 90%;
+    margin: 50px auto;
+    padding: 60px 50px;
+}
+
+.img-portafolio img{
+    width: 1400px;
+    height: 350px;
+    margin: auto 65px;
+}
+
+/*  fin --- .porfolio --- html */
+
+/*  inicio --- .descargas --- html */
+
+.descargas{
+    background-image: url(Imagenes/fondos/fondo_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.lista-descarga {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bloque-descarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bloque-descarga p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.btn_1 {
+    background-color: #db9600;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn_1:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*  fin --- .descargas --- html */
+
+/*  inicio --- .footer --- html */
+
+.contenedor6{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: small;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/*  fin --- .footer --- html */
