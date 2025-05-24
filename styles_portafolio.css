@@ -1,199 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*  inicio --- .nav --- html */
 
-body{
-    background-image: url(Imagenes/fondos/fondo_3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+.navegador {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
 }
 
-.navegador{
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    position: fixed;
-    z-index: 1;
+.logo {
+  margin: 0;
+  padding: 0 0 0 30px;
 }
 
-.logo{
-    margin: 0;
-    padding: 0 0 0 30px;
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar ul{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+.nav ul li {
+  margin: 5px;
+  padding: 1px;
 }
 
-.nav ul li{
-    margin: 5px;
-    padding: 1px;
+nav ul li a {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1.5rem 0 0;
+  padding: 0 1rem 0 0;
 }
 
-nav ul li a{
-    font-family: "Nunito", sans-serif;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 1.5rem 0 0;
-    padding: 0 1rem 0 0;
+.navbar a:hover {
+  background-color: #db9600;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.navbar a:hover{
-    background-color: #db9600;
-    color: #000;
-    border-radius: 10px;
-    padding: 20px;
+.navbar label {
+  cursor: pointer;
+  display: none;
 }
 
-.navbar label{
-    cursor: pointer;
-    display: none;
+h1 {
+  font-family: "Urbanist", sans-serif;
 }
 
-h1{
-    font-family: "Urbanist", sans-serif;
+h2 {
+  font-family: "Urbanist", sans-serif;
+  padding: 5px;
 }
 
-h2{
-    font-family: "Urbanist", sans-serif;
-    padding: 5px;
+h3 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
 }
 
-h3{
-    font-family: "Urbanist", sans-serif;
-    text-align: center;
-}
-
-p{
-    font-family: "Nunito", sans-serif;
-    padding: 10px 0;
+p {
+  font-family: "Nunito", sans-serif;
+  padding: 10px 0;
 }
 
 /*  fin --- .nav --- html */
 
 /* inicio --- .porfolio --- html */
 
-.porfolio{
-    margin: auto;
-    padding: 140px 0 70px 0;
+.porfolio {
+  margin: auto;
+  padding: 140px 0 70px 0;
 }
 
-.titulo{
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    margin: auto;
-    padding: 30px;
-    border-radius: 10px;
+.titulo {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.info5{
-    background-color: #000;
-    color: #fff;
-    width: 90%;
-    margin: 50px auto;
-    padding: 60px 50px;
+.info5 {
+  background-color: #000;
+  color: #fff;
+  width: 90%;
+  margin: 50px auto;
+  padding: 60px 50px;
 }
 
-.img-portafolio img{
-    width: 1400px;
-    height: 350px;
-    margin: auto 65px;
+.img-portafolio img {
+  width: 1400px;
+  height: 350px;
+  margin: auto 65px;
 }
 
 /*  fin --- .porfolio --- html */
 
 /*  inicio --- .descargas --- html */
 
-.descargas{
-    background-image: url(Imagenes/fondos/fondo_4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px;
+.descargas {
+  background-image: url(Imagenes/fondos/fondo_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .lista-descarga {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .bloque-descarga {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .bloque-descarga p {
-    margin-bottom: 10px;
-    font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-
 .btn_1 {
-    background-color: #db9600;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+  background-color: #db9600;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .btn_1:hover {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*  fin --- .descargas --- html */
 
 /*  inicio --- .footer --- html */
 
-.contenedor6{
-    background-color: #000;
-    color: #fff;
+.contenedor6 {
+  background-color: #000;
+  color: #fff;
 }
 
-.footer-text{
-    text-align: center;
-    font-size: small;
+.footer-text {
+  text-align: center;
+  font-size: small;
 }
 
 .redes-sociales {

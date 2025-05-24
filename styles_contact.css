@@ -5,18 +5,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
 
-body{
-    background-image: url(Imagenes/fondo_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+/*  inicio --- .nav --- html */
 
 .navegador{
     background-color: #000;
