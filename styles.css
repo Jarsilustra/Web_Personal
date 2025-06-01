@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  padding: 5px;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  padding: 10px 0;
+}
+
+/*  inicio --- .nav --- html */
+
+.navegador {
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.logo {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu .menu-list {
+  margin: 0 20px;
+  padding: 0;
+}
+
+.menu .menu-list li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.menu .menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menu .menu-list li a:hover {
+  background-color: #db9600;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #000;
+  padding: 10px 15px;
+}
+
+/* --- fin --- .nav --- html */
+
+/* inicio --- .hero --- html */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-contenedor {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-texto {
+  position: absolute;
+  font-family: "Urbanist", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 0;
+}
+
+.hero-texto h1 {
+  font-size: 10vw;
+  margin: 0;
+}
+
+.hero-texto p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5vw;
+  margin: 20px 0;
+}
+
+.btn {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #db9600;
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  margin: 0 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+/*  fin --- .hero --- html */
+
+/* inicio --- .about --- html */
+
+.about {
+  background-image: url("Imagenes/fondos/fondo_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+}
+
+.about-contenedor {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5em 10em;
+  gap: 4rem;
+}
+
+article {
+  width: 50%;
+  text-align: center;
+}
+
+.btn-about a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  display: inline-block;
+  background-color: #db9600;
+  color: #000;
+  font-weight: bold;
+  max-width: 15rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-about a:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* fin --- .about --- html */
+
+/* inicio --- .portafolio --- html */
+
+
