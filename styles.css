@@ -425,3 +425,95 @@ article {
   list-style: disc;
   margin-bottom: 0.6rem;
 }
+
+/*  fin --- .services --- html */
+
+/*  inicio --- .contact --- html */
+
+.contact {
+  background-image: url(Imagenes/fondos/fondo_5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 0.5rem;
+  color: #000;
+}
+
+.contacto-contenedor {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.contacto-contenedor h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-contenedor p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn-contact a {
+  font-family: "Nunito", sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: bold;
+  max-width: 8em;
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-contact a:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/*  fin --- .contact --- html */
+
+/*  inicio --- .footer --- html */
+
+.footer-contenedor {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+}
+
+/*  fin --- .footer --- html */
