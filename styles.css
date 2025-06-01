@@ -375,3 +375,53 @@ article {
   transition: transform 0.3s ease;
 }
 /* fin --- .portafolio --- html */
+
+/* inicio --- .servicios --- html */
+
+.servicios {
+  background-image: url("Imagenes/fondos/fondo_4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.servicios-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* para adaptarse en móviles */
+}
+
+.columna {
+  flex: 1 1 45%;
+  padding: 4rem;
+}
+
+.columna h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.columna p,
+.columna ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.lista {
+  font-family: "Nunito", sans-serif;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.lista li {
+  list-style: disc;
+  margin-bottom: 0.6rem;
+}
