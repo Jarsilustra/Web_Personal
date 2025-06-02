@@ -10,6 +10,14 @@
   list-style: none;
 }
 
+body {
+  padding-top: 100px; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Urbanist", sans-serif;
 }
@@ -165,7 +173,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
 }
 
 .about-contenedor {
@@ -377,6 +385,10 @@ article {
 /* fin --- .portafolio --- html */
 
 /* inicio --- .servicios --- html */
+
+#services {
+  scroll-margin-top: 100px;
+}
 
 .servicios {
   background-image: url("Imagenes/fondos/fondo_4.jpg");

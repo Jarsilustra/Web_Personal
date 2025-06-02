@@ -10,15 +10,17 @@
   <body>
     <header class="navegador">
       <div class="logo">
-        <img
-          src="Imagenes/favicon/android-chrome-192x192.png"
-          alt="Jarsilustra - logo"
-          width="100px"
-          height="100px"
-        />
+        <a href="index.html">
+          <img
+            src="Imagenes/favicon/android-chrome-192x192.png"
+            alt="Jarsilustra - logo"
+            width="100px"
+            height="100px"
+          />
+        </a>
       </div>
-      <nav class="menu">
-        <div class="menu-toggle">☰</div>
+      <nav role="navigation" class="menu">
+        <div class="menu-toggle" aria-label="abrir menu">☰</div>
         <ul class="menu-list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">Sobre mí</a></li>
@@ -28,11 +30,11 @@
         </ul>
       </nav>
     </header>
-    <main class="hero">
+    <main role="main" class="hero">
       <div class="hero-contenedor">
         <video autoplay muted loop class="back-video">
-          <source src="video/Video Jarsilustra Html 3.webm" type="video/mp4" />
-          <source src="video/Video Jarsilustra Html 4.mp4" type="video/webm" />
+          <source src="video/Video Jarsilustra Html 3.webm" type="video/webm" />
+          <source src="video/Video Jarsilustra Html 4.mp4" type="video/mp4" />
         </video>
         <div class="hero-texto">
           <h1>Jarsilustra</h1>
@@ -85,7 +87,7 @@
               <div class="flip-back">
                 <h3>Colombian Tech</h3>
                 <p>
-                  Ilustracion con una mezcla de tecnologia y de ese toque
+                  Ilustración con una mezcla de tecnología y de ese toque
                   nacional Colombiano.
                 </p>
               </div>
@@ -103,7 +105,7 @@
               <div class="flip-back">
                 <h3>Historia - Enfrentando el miedo</h3>
                 <p>
-                  "Historia inspirada en anecdotas y sucesos de depresión y
+                  "Historia inspirada en anécdotas y sucesos de depresión y
                   superación."
                 </p>
               </div>
@@ -121,7 +123,7 @@
               <div class="flip-back">
                 <h3>Retrato personalizado</h3>
                 <p>
-                  "Solicitud de un cliente buscanso su retrato y un ambiente
+                  "Solicitud de un cliente buscando su retrato y un ambiente
                   tranquilo."
                 </p>
               </div>
@@ -174,11 +176,11 @@
           </p>
         </div>
         <div class="btn-contact">
-          <a href="#">Contactame</a>
+          <a href="#">Contáctame</a>
         </div>
       </div>
     </section>
-    <footer class="footer-contenedor">
+    <footer role="contentinfo" class="footer-contenedor">
       <div class="redes-sociales">
         <!-- Instagram -->
         <a
