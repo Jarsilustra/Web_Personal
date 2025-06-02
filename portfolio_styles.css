@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+    padding: 10px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 7rem;
+}
+
+/*  inicio --- .nav --- html */
+
+.navegador {
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.logo {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu .menu-list {
+  margin: 0 20px;
+  padding: 0;
+}
+
+.menu .menu-list li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.menu .menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menu .menu-list li a:hover {
+  background-color: #db9600;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #000;
+  padding: 10px 15px;
+}
+
+/* --- fin --- .nav --- html */
+
+/* inicio --- .porfolio --- html */
+
+.porfolio {
+   background-image: url(Imagenes/fondos/fondo_8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.titulo {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.info5 {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 15px;
+  width: 70%;
+  margin: 50px auto;
+  padding: 50px 10px;
+}
+
+.img-portafolio img {
+  width: 1400px;
+  height: 350px;
+  margin: auto 65px;
+}
+
+/*  fin --- .porfolio --- html */
+
+/*  inicio --- .descargas --- html */
+
+.pdf p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0 12rem;
+}
+.descargas {
+  background-image: url(Imagenes/fondos/fondo_5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.lista-descarga {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.bloque-descarga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bloque-descarga p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn_1 {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn_1:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*  fin --- .descargas --- html */
+
+/*  inicio --- .footer --- html */
+
+.footer-contenedor {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+}
+
+/*  fin --- .footer --- html */
