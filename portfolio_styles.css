@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
 }
 
 h3 {
@@ -32,8 +33,6 @@ h3 {
 
 p {
   font-family: "Nunito", sans-serif;
-  padding: 10px 0 0 0;
-  font-size: 1rem;
   line-height: 1.5;
   margin: 0 7rem;
 }
