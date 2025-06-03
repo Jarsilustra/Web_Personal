@@ -58,40 +58,39 @@
         <form class="formulario-contacto" method="POST" action="">
           <fieldset>
             <legend>Deja aquí tu mensaje!</legend>
-            <label for="nombre">*Nombre:</label><br />
+            <label for="nombre">*Nombre:</label>
             <input
               type="text"
               id="nombre"
               name="nombre"
               placeholder="Nombre y Apellido"
-              required
-            /><br />
-            <label for="email">*Correo electrónico:</label><br />
+              required minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+"
+            />
+            <label for="email">*Correo electrónico:</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Email"
-              required=""
-            /><br />
+              required maxlength="100" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            />
             <p>*¿Qué te gustaría preguntar?</p>
-            <select name="opciones" id="dropdown">
+            <select name="opciones" id="dropdown" required>
               <option value="comision">Comisión</option>
               <option value="encargo">Encargo</option>
               <option value="consulta">Consulta</option>
-              <option value="colaboracion">Colaboración</option></select
-            ><br /><br />
-            <label for="mensaje">*Mensaje:</label><br />
+              <option value="colaboracion">Colaboración</option>
+            </select>
+            
+            <label for="mensaje">*Mensaje:</label>
             <textarea
               id="mensaje"
               name="mensaje"
               rows="5"
               cols="25"
               placeholder="Deja tu mensaje"
-              required
-            ></textarea
-            ><br />
-            <br />
+              required minlength="10" maxlength="1000"
+            ></textarea>
             <button id="submit" class="btn_2" type="submit">Enviar</button>
           </fieldset>
         </form>
