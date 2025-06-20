@@ -529,3 +529,203 @@ article {
 }
 
 /*  fin --- .footer --- html */
+
+/* Mostrar/ocultar el menú en móviles */
+
+.menu .menu-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu .menu-list.active {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .menu .menu-list {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    background-color: #db9600;
+    color: #000;
+    padding: 1rem;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .menu .menu-list.active {
+    display: flex;
+  }
+}
+
+/* responsive */
+
+/* Móviles (≤480px) */
+@media screen and (max-width: 480px) {
+  .navegador {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .menu .menu-list li a {
+    font-size: 1rem;
+  }
+
+  .hero-texto h1 {
+    font-size: 12vw;
+  }
+
+  .hero-texto p {
+    font-size: 5vw;
+  }
+
+  .about {
+    background-image: none;
+    background-color: #000;
+  }
+
+  .about-contenedor,
+  .about h2,
+  .about p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .about-contenedor {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .porta-texto,
+  .columna {
+    width: 90%;
+  }
+
+  .galeria {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contacto-contenedor h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablets (481px–768px) */
+@media screen and (max-width: 768px) {
+  .menu .menu-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: #db9600;
+    cursor: pointer;
+  }
+
+  .hero-texto h1 {
+    font-size: 9vw;
+  }
+
+  .about-contenedor {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .columna {
+    flex: 1 1 100%;
+    padding: 2rem 1rem;
+  }
+
+  .galeria {
+    gap: 3rem;
+  }
+
+  .porta-texto {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicios {
+    background-image: none;
+    background-color: #fff;
+  }
+
+  .columna h2,
+  .columna p,
+  .columna ul,
+  .columna li {
+    color: #000;
+  }
+}
+
+/* Laptops (769px–1024px) */
+@media screen and (max-width: 1024px) {
+  .menu .menu-list li a {
+    font-size: 1.1rem;
+  }
+
+  .about-contenedor {
+    padding: 4rem 3rem;
+  }
+
+  .porta-texto {
+    width: 80%;
+  }
+
+  .columna {
+    padding: 2rem;
+  }
+}
+
+/* Pantallas muy grandes (≥1440px) */
+@media screen and (min-width: 1440px) {
+  .hero-texto h1 {
+    font-size: 6rem;
+  }
+
+  .hero-texto p {
+    font-size: 2rem;
+  }
+
+  .about-contenedor {
+    padding: 5rem 12rem;
+  }
+
+  .porta-texto {
+    width: 50%;
+  }
+
+  .columna {
+    padding: 4rem 3rem;
+  }
+
+  .galeria {
+    gap: 5rem;
+  }
+}
