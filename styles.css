@@ -597,7 +597,7 @@ article {
 
 /* Móviles (≤480px) */
 @media screen and (max-width: 480px) {
-  
+
   .menu .menu-list li a {
     font-size: 1rem;
   }
@@ -747,5 +747,64 @@ article {
 
   .galeria {
     gap: 5rem;
+  }
+}
+
+/* Pantallas menores a 412px */
+@media (max-width: 412px) {
+  /* Encabezados */
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Texto general */
+p{
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0 12px;
+}
+
+  /* Botones */
+  .btn,
+  .btn-porta a,
+  .btn-contact a {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    margin: 25px;
+  }
+
+  /* Menú */
+  .menu .menu-list li a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Footer */
+  .footer-text p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .redes-sociales svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Secciones */
+  .about-texto article,
+  .porta-texto,
+  .columna,
+  .contact-text {
+    padding: 15px;
   }
 }
