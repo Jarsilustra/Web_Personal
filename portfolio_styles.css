@@ -354,7 +354,7 @@ p {
   color: #fff;
 }
 
-.footer-text {
+.footer-text p {
   text-align: center;
   font-size: 0.75rem;
   padding: 1rem;
