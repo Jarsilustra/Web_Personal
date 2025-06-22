@@ -260,3 +260,103 @@ button:hover {
 }
 
 /*  fin --- .footer --- html */
+
+/* Mostrar/ocultar el menú en móviles */
+
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: #db9600;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .menu .menu-list {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .menu .menu-list.active {
+    display: flex;
+  }
+
+  .menu .menu-list li {
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .menu .menu-list li a {
+    font-size: 1rem;
+  }
+}
+
+  /* Teléfonos pequeños: hasta 480px */
+@media screen and (max-width: 480px) {
+  .navegador {
+    flex-direction: row;
+    padding: 0 10px;
+    height: auto;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .info-contacto p,
+  .formulario-contacto p,
+  label,
+  input,
+  textarea,
+  #dropdown {
+    font-size: 0.9rem;
+  }
+  button {
+    width: 90%;
+  }
+  .info-formulario {
+    padding: 15px;
+  }
+}
+
+/* Teléfonos grandes / Phablets: 481px a 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  .info-contacto p,
+  .formulario-contacto p,
+  label,
+  input,
+  textarea,
+  #dropdown {
+    font-size: 1rem;
+  }
+  button {
+    width: 80%;
+  }
+}
+
+/* Tablets pequeñas: 768px a 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  .info-contacto p,
+  .formulario-contacto p,
+  label,
+  input,
+  textarea,
+  #dropdown {
+    font-size: 1.05rem;
+  }
+  button {
+    width: 70%;
+  }
+}

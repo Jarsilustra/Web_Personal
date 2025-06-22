@@ -42,15 +42,15 @@ p {
 .navegador {
   background-color: #000;
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
   height: 100px;
-  padding: 0 20px;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  z-index: 100;
 }
 
 .logo {
@@ -549,36 +549,11 @@ article {
   z-index: 10;
 }
 
-@media screen and (max-width: 768px) {
-  .menu .menu-list {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 100px;
-    background-color: #db9600;
-    color: #000;
-    padding: 1rem;
-    border-radius: 10px;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 10;
-  }
-
-  .menu .menu-list.active {
-    display: flex;
-  }
-}
-
 /* responsive */
 
 /* Móviles (≤480px) */
 @media screen and (max-width: 480px) {
-  .navegador {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-
+  
   .menu .menu-list li a {
     font-size: 1rem;
   }
@@ -588,7 +563,7 @@ article {
   }
 
   .hero-texto p {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .about {
