@@ -122,6 +122,10 @@ i{
 
 /* inicio --- .formulario --- html */
 
+.mensaje {
+  font-size: 1.2rem;
+}
+
 .formulario {
   background-image: url("Imagenes/fondos/fondo_6.jpg");
   background-size: cover;
