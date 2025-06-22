@@ -532,23 +532,67 @@ article {
 
 /* Mostrar/ocultar el menú en móviles */
 
+/* Estilos base del menú */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: relative;
+  z-index: 100;
+}
+
 .menu .menu-list {
   display: flex;
   gap: 1rem;
+  list-style: none;
 }
 
+.menu .menu-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #db9600;
+  cursor: pointer;
+}
+
+/* Estilos activos en móviles */
 .menu .menu-list.active {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
-  top: 100px;
+  top: 100%;
   right: 20px;
   padding: 1rem;
   border-radius: 10px;
-  z-index: 10;
 }
 
+/* Responsive: hasta tablets */
+@media screen and (max-width: 768px) {
+  .menu .menu-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu .menu-list li {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .menu .menu-list li a {
+    font-size: 1rem;
+  }
+}
 /* responsive */
 
 /* Móviles (≤480px) */
@@ -607,6 +651,7 @@ article {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+
 }
 
 /* Tablets (481px–768px) */

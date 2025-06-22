@@ -263,33 +263,59 @@ button:hover {
 
 /* Mostrar/ocultar el menú en móviles */
 
-@media screen and (max-width: 767px) {
-  .menu-toggle {
-    display: block;
-    font-size: 2rem;
-    color: #db9600;
-    cursor: pointer;
-    margin-right: 20px;
-  }
+/* Estilos base del menú */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: relative;
+  z-index: 100;
+}
 
+.menu .menu-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menu .menu-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #db9600;
+  cursor: pointer;
+}
+
+/* Estilos activos en móviles */
+.menu .menu-list.active {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Responsive: hasta tablets */
+@media screen and (max-width: 768px) {
   .menu .menu-list {
     display: none;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 10px;
-    z-index: 10;
   }
 
-  .menu .menu-list.active {
-    display: flex;
+  .menu-toggle {
+    display: block;
   }
 
   .menu .menu-list li {
-    display: block;
     margin: 10px 0;
     text-align: right;
   }
@@ -298,6 +324,7 @@ button:hover {
     font-size: 1rem;
   }
 }
+
 
   /* Teléfonos pequeños: hasta 480px */
 @media screen and (max-width: 480px) {
