@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuList.classList.toggle("active");
   });
 });
+
+// Soporte para teclado en el menú
+toggle.addEventListener("keydown", function(e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    menuList.classList.toggle("active");
+  }
+});
