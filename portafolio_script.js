@@ -1,8 +1,11 @@
+const { lazy } = require("react");
+
 const swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 10,
   centeredSlides: true,
+  lazy: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
