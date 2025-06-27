@@ -96,7 +96,7 @@ p {
 /* --- inicio --- .contact --- html */
 
 .contacto {
-  background-image: url("Imagenes/fondos/fondo_5.jpg");
+  background-image: url("Imagenes/fondos/fondo_6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,7 +115,7 @@ p {
 
 i{
     font-size: 1.2rem;
-    color: #fff;
+    color: #000;
     margin-right: 10px;
 }
 /* --- fin --- .contact --- html */
@@ -123,11 +123,11 @@ i{
 /* inicio --- .formulario --- html */
 
 .mensaje {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .formulario {
-  background-image: url("Imagenes/fondos/fondo_6.jpg");
+  background-image: url("Imagenes/fondos/fondo_5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -137,12 +137,13 @@ i{
   padding: 60px;
 }
 .info-formulario {
-  background-image: url("Imagenes/fondos/fondo_5.jpg");
+  background: transparent;
+  backdrop-filter: blur(3px);
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
   margin: auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 fieldset {

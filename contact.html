@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="icon" href="Imagenes/favicon/favicon-32x32.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <header class="navegador">
@@ -42,7 +43,7 @@
           encantado de leerte y responder cualquier duda que tengas.
         </b></p><br><br>
         <div class="info-formulario">
-          <form class="formulario-contacto" method="POST" action="">
+          <form class="formulario-contacto" id="contact-form" method="POST" action="#">
             <fieldset>
               <legend>Deja aquí tu mensaje!</legend>
               <label for="nombre">*Nombre:</label>
@@ -64,7 +65,6 @@
                 placeholder="Email"
                 required
                 maxlength="100"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               />
               <p>*¿Qué te gustaría preguntar?</p>
               <select name="opciones" id="dropdown" required>
