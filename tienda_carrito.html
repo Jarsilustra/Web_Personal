@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Jarsilustra | Portafolio de Ilustración, Retratos y Animaciones
+    </title>
+    <link rel="stylesheet" href="tienda_carrito_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="Imagenes/favicon/favicon-32x32.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+<body>
+    <h1>Tu carrito</h1>
+    <div class="acciones">
+        <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="comprar" onclick="comprar()">Comprar</button>
+        <!-- <a href="index.html">Productos</a> -->
+        <button onclick="location.href='tienda.html'">← Volver a la tienda</button>
+    </div>
+
+    <table id="tabla-carrito">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="total" id="total-final">Total a pagar: $0</div>
+
+    <script src="tienda_carrito.js"></script>
+</body>
+
+</html>

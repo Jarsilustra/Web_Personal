@@ -10,7 +10,7 @@
 
 body {
   padding-top: 100px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 html {
@@ -19,11 +19,17 @@ html {
 
 h1 {
   font-family: "Urbanist", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -33,10 +39,10 @@ h3 {
 
 p {
   font-family: "Nunito", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: bold;
 }
-
-/*  inicio --- .nav --- html */
 
 /*  inicio --- .nav --- html */
 
@@ -74,7 +80,7 @@ p {
 .menu .menu-list li {
   display: inline-block;
   margin: 0 10px;
-  padding: 13px;
+  padding: 8px;
 }
 
 .menu .menu-list li a {
@@ -83,65 +89,159 @@ p {
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
   font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .menu .menu-list li a:hover {
   background-color: #db9600;
-  transition: 0.3s;
   border-radius: 10px;
   color: #000;
   padding: 10px 15px;
 }
 
-/* --- fin --- .nav --- html */
+/*  fin --- .nav --- html */
 
-/*  inicio --- .producto --- html */
+/* Inicio --- .productos --- html */
 
-/*  inicio --- .producto --- html */
-.producto img {
-  width: 300px;
-  height: auto;
-  max-width: 100%;
-  border-radius: 10px;
+.titulo {
+  background-image: url(Imagenes/fondos/fondo_5.jpg);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.tienda-productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+.titulo h1 {
+  margin-bottom: 1rem;
+}
+
+.titulo p {
+  font-size: 1.1rem;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-/* UNA SOLA declaración de .producto */
+/* === CONTENEDOR PRINCIPAL DE PRODUCTOS === */
+.productos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+/* Contenedor que agrupa todos los productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem 0 6rem;
+}
+
+
+/* === ESTILOS DEL PRODUCTO === */
 .producto {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;        /* Solo un borde */
+  justify-content: space-between;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.producto__imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Solo una sombra */
-  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.producto__titulo {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.8rem;
+}
+
+.producto__descripcion {
   font-family: "Nunito", sans-serif;
-  color: #333;
-  font-size: 16px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 .precio {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
   color: #db9600;
-  margin: 10px;
-  padding: 5px 0;
+  margin-bottom: 1rem;
+}
+
+.producto button {
+  background-color: #db9600;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.producto button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* === CLEARFIX PARA LOS FLOATS === */
+.tienda-producto::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn-compras {
+  display: block;
+  width: 200px;
+  margin: 2rem auto;
+  padding: 12px;
+  background-color: #db9600;
+  color: #fff;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px ;
+}
+.btn-compras:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*  inicio --- .footer --- html */
@@ -174,3 +274,46 @@ p {
 }
 
 /*  fin --- .footer --- html */
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .tienda-producto {
+    width: 100%;
+    float: none;
+  }
+  
+  .tienda-producto:nth-child(2n+1) {
+    clear: none;
+  }
+  
+  .producto {
+    max-width: 100%;
+    min-height: auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .titulo {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+    padding: 1rem;
+  }
+  
+  .producto__imagen {
+    height: 150px;
+  }
+  
+  .producto__titulo {
+    font-size: 1.2rem;
+  }
+  
+  .precio {
+    font-size: 1.5rem;
+  }
+}
