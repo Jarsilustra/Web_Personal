@@ -6,7 +6,7 @@
     <title>
       Jarsilustra | Portafolio de Ilustración, Retratos y Animaciones
     </title>
-    <link rel="stylesheet" href="contact_styles.css" />
+    <link rel="stylesheet" href="tienda_styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -37,86 +37,78 @@
         </ul>
       </nav>
     </header>
-    <main role="main">
-      <section class="formulario">
-        <p class="mensaje"><b>
-          ¡No te vayas sin dejar tu mensaje, solicitud o sugerencia! Estaré
-          encantado de leerte y responder cualquier duda que tengas.
-        </b></p><br><br>
-        <div class="info-formulario">
-          <form class="formulario-contacto" id="contact-form" method="POST" action="#">
-            <fieldset>
-              <legend>Deja aquí tu mensaje!</legend>
-              <label for="nombre">*Nombre:</label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                placeholder="Nombre y Apellido"
-                required
-                minlength="2"
-                maxlength="50"
-                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+"
-              />
-              <label for="email">*Correo electrónico:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-                maxlength="100"
-              />
-              <p>*¿Qué te gustaría preguntar?</p>
-              <select name="opciones" id="dropdown" required>
-                <option value="comision">Comisión</option>
-                <option value="consulta">Consulta</option>
-                <option value="colaboracion">Colaboración</option>
-              </select>
-
-              <label for="mensaje">*Mensaje:</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="5"
-                cols="25"
-                placeholder="Deja tu mensaje"
-                required
-                minlength="10"
-                maxlength="1000"
-              ></textarea>
-              <button id="submit" class="btn_2" type="submit">Enviar</button>
-            </fieldset>
-          </form>
-        </div>
-      </section>
-      <section class="contacto">
-        <div class="info-contacto">
-          <h2>Contáctame</h2>
-          <p>
-            ¿Te gustaría trabajar conmigo o tienes alguna duda? Estoy a un
-            mensaje de distancia.
-          </p>
-          <p>
-            <strong><i class="fa fa-phone"></i> Teléfono</strong> +57 323 582
-            1554
-          </p>
-          <p>
-            <strong><i class="fa fa-envelope"></i> Email:</strong>
-            jarsilustra@gmail.com
-          </p>
-          <p>
-            <strong><i class="fa fa-map-marker-alt"></i> Ubicación:</strong>
-            Trabajo desde Cali, Colombia,
-            <b>disponible para proyectos en todo el mundo.</b>
-          </p>
-          <p>
-            <strong><i class="fa fa-clock"></i> Horario de atención:</strong>
-            Lunes a viernes, de 10:00 a 17:00 (UTC-05:00).
-          </p>
-        </div>
-      </section>
+    <main role="main" class="titulo">
+      <div>
+        <h1>Tienda</h1>
+        <p>
+          Bienvenido a mi tienda. Aquí encontrarás una selección de mis mejores
+          ilustraciones y retratos.
+        </p>
+      </div>
     </main>
+    <div class="tienda-productos">
+    <section class="productos">
+      <article class="producto" data-id="p001">
+        <img
+          src="Imagenes/Img_ tienda/webp_tienda.webp"
+          alt="El Guerrero y su protegida"
+          class="producto__imagen"
+        />
+        <h2 class="producto__titulo">El Guerrero y su protegida</h2>
+        <p class="producto__descripcion">
+          Un fuerte guerrero que da su vida para proteger lo más valioso que
+          tiene.
+        </p>
+        <div class="precio">$45.000</div>
+        <button onclick="agregarAlcarrito('p001')">Añadir</button>
+      </article>
+    </section>
+    <section class="producto">
+      <article class="producto" data-id="p002">
+        <img
+          src="Imagenes/Img_ tienda/webp_tienda_1.webp"
+          alt="El ultimo adíos"
+          class="producto__imagen"
+        />
+        <h2 class="producto__titulo">El ultimo adíos</h2>
+        <p class="producto__descripcion">
+          Un emotivo adiós que captura la esencia de la pérdida.
+        </p>
+        <div class="precio">$45.000</div>
+        <button onclick="agregarAlcarrito('p002')">Añadir</button>
+      </article>
+    </section>
+    <section class="producto">
+      <article class="producto" data-id="p003">
+        <img
+          src="Imagenes/Img_ tienda/webp_tienda_2.webp"
+          alt="Darian el Caballero"
+          class="producto__imagen"
+        />
+        <h2 class="producto__titulo">Darian el Caballero</h2>
+        <p class="producto__descripcion">
+          Un valiente caballero en busca de su destino y de su honor.
+        </p>
+        <div class="precio">$45.000</div>
+        <button onclick="agregarAlcarrito('p003')">Añadir</button>
+      </article>
+    </section>
+    <section class="producto">
+      <article class="producto" data-id="p004">
+        <img
+          src="Imagenes/Img_ tienda/webp_tienda_3.webp"
+          alt="La sirena y un pequeño amigo"
+          class="producto__imagen"
+        />
+        <h2 class="producto__titulo">La sirena y un pequeño amigo</h2>
+        <p class="producto__descripcion">
+          Una hermosa sirena y su pequeño amigo en una aventura mágica.
+        </p>
+        <div class="precio">$45.000</div>
+        <button onclick="agregarAlcarrito('p004')">Añadir</button>
+      </article>
+    </section>
+    </div>
     <footer role="contentinfo" class="footer-contenedor">
       <div class="redes-sociales">
         <!-- Instagram -->
@@ -180,8 +172,6 @@
         <p>&copy; 2025 Jarsilustra. Todos los derechos reservados.</p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="contact_script.js"></script>
+    <script src="tienda_script.js"></script>
   </body>
 </html>

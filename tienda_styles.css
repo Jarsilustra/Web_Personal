@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+}
+
+/*  inicio --- .nav --- html */
+
+/*  inicio --- .nav --- html */
+
+.navegador {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  z-index: 100;
+}
+
+.logo {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu .menu-list {
+  margin: 0 20px;
+  padding: 0;
+}
+
+.menu .menu-list li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 13px;
+}
+
+.menu .menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu .menu-list li a:hover {
+  background-color: #db9600;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #000;
+  padding: 10px 15px;
+}
+
+/* --- fin --- .nav --- html */
+
+/*  inicio --- .producto --- html */
+
+/*  inicio --- .producto --- html */
+.producto img {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.tienda-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* UNA SOLA declaración de .producto */
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;        /* Solo un borde */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Solo una sombra */
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #db9600;
+  margin: 10px;
+  padding: 5px 0;
+}
+
+/*  inicio --- .footer --- html */
+
+.footer-contenedor {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.redes-sociales a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.redes-sociales a:hover svg {
+  transform: scale(1.2);
+}
+
+/*  fin --- .footer --- html */
