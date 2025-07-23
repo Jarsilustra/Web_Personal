@@ -70,6 +70,8 @@ Si deseas clonar y ejecutar este proyecto en tu computadora:
         Haz doble clic en el archivo
         o
         Usa una extensión como Live Server en VS Code para visualizarlo localmente.
+   
+---
 
 8. 📖 Aprendizajes
 
@@ -83,6 +85,7 @@ Durante el desarrollo de este proyecto logré:
 
 - Crear una base sólida para futuros proyectos web más complejos.
 
+---
 
 9. 📬 Contacto
 
@@ -92,6 +95,7 @@ Si quieres ver más de mi trabajo o ponerte en contacto conmigo:
 
 - LinkedIn: Jorge Ramirez
 
+---
 
 ✨ Autor
 
