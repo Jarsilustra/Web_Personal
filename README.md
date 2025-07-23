@@ -4,6 +4,8 @@
 
 1. **Web Personal – Proyecto Final Bootcamp TalentoTech**
 
+![Vista previa del proyecto](Imagenes/Banner_README/Banner_Web.png)
+
 ---
 
 2. 📌 **Descripción (Español)**
@@ -116,6 +118,10 @@ Proyecto desarrollado como parte del Bootcamp TalentoTech Colombia.
 ---
 
 1. **Personal Website – Final Project Bootcamp TalentoTech**
+
+![Vista previa del proyecto](Imagenes/Banner_README/Banner_Web.png)
+
+---
 
 2. 📌 **Description**
 
