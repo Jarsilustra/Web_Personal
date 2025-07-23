@@ -11,6 +11,8 @@ El propósito principal de este proyecto es **poner en práctica los conocimient
 diseño responsive y estructura de proyecto. Además, este sitio funciona como mi portafolio personal para mostrar mis habilidades como ilustrador y desarrollador frontend 
 en formación.
 
+
+
 ---
 
 3. 🎯 Objetivos del proyecto
@@ -39,17 +41,17 @@ Puedes ver la versión actual del proyecto aquí:
 ---
 
 6. 📂 Estructura del repositorio
-
+```
 Web_Personal/
-│
-├── index.html # Página principal
-├── portfolio.html # Sección de portafolio
-├── contact.html # Sección de contacto
-├── tienda.html # Sección de tienda
-├── css/ # Hojas de estilo CSS
-├── js/ # Archivos JavaScript
-└── assets/ # Imágenes, íconos y otros recursos
-
+     │
+     ├── index.html # Página principal
+     ├── portfolio.html # Sección de portafolio
+     ├── contact.html # Sección de contacto
+     ├── tienda.html # Sección de tienda
+     ├── css/ # Hojas de estilo CSS
+     ├── js/ # Archivos JavaScript
+     └── assets/ # Imágenes, íconos y otros recursos
+```
 
 ---
 
