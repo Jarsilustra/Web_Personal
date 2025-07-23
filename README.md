@@ -34,7 +34,7 @@ en formación.
 5. 🚀 Vista previa del proyecto
 
 Puedes ver la versión actual del proyecto aquí:  
-👉 [**Ver Demo en GitHub Pages**](https://jarsilustra.github.io/Web_Personal/) *(si está desplegada)*
+👉 [**Ver Demo en GitHub Pages**](https://jarsilustra.github.io/Web_Personal/) 
 
 ---
 
